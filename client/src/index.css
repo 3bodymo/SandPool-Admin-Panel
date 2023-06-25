@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* For NFT card */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-main: hsl(217, 54%, 11%);
+  --bg-card: hsl(216, 50%, 16%);
+  --colour-blue: hsl(215, 51%, 70%);
+  --colour-cyan: hsl(178, 100%, 50%);
+  --colour-white: hsl(0, 0%, 100%);
+  --line-colour: hsl(215, 32%, 27%);
+}
+
+.main-card {
+  background-color: var(--bg-card);
+  width: min(100%, 21rem);
+  margin: 1.5rem auto;
+  border-radius: 15px;
+  padding: 1.5rem 1.6rem 2rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+}
+
+/* Main Image */
+.image-container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
+}
+
+.main-image {
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: none;
+}
+
+.image-container:hover .overlay {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.image-container:hover .overlay + .view {
+  display: block;
+}
+
+/* Main Content */
+.title {
+  color: var(--colour-white);
+  margin: 1.4rem 0 0.75rem;
+  font-size: 1.4rem;
+  font-weight: 550;
+  font-family: "Outfit", sans-serif;
+}
+
+.eth-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0 1.4rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.eth-info-user-card {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0 0;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.eth {
+  color: var(--colour-cyan);
+  font-weight: 600;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+/* Creator Info */
+.creator-info {
+  display: flex;
+  border-top: 1px solid rgb(238, 237, 237);
+  padding-top: 1rem;
+  align-items: center;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
