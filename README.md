@@ -32,10 +32,10 @@ _Make sure to install MongoDB using the provided link:_
 
 ## Getting Started
 
-_Before getting started, make sure that you change `DATABASE_URL` with your database hostname in .env file (server)_
+_Before getting started, make sure that you change `DATABASE_URL` with your database hostname in `.env` file (server folder)_
 
 ```shell
-ganache-cli -d --db /path -i 4447
+ganache-cli
 sudo systemctl start mongod
 npm start
 ```
