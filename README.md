@@ -1,4 +1,4 @@
-# SandPool
+# SandPool Admin Panel
 
 ![](https://github.com/3bodymo/SandPool-Admin-Panel/blob/main/client/src/static/images/screenshot.png)
 
